@@ -11,9 +11,9 @@ return(
       <Routes>
         <Route path="/" element={<Navigation/>}>
           <Route index element={<Home/>}/>
-          <Route path="/shop" element={<ShopComponent/>}/>
-          <Route path='/checkout' element={<CheckoutComponent/>}/>
-          <Route path='/Auth' element={<Authentication/>}/>
+          <Route path='shop/*' element={<ShopComponent />} />
+          <Route path='checkout' element={<CheckoutComponent/>}/>
+          <Route path='Auth' element={<Authentication/>}/>
         </Route>
       </Routes>
       </>
